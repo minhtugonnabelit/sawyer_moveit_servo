@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="r_twist" pkg="slider_publisher" type="slider_publisher" output="screen" respawn="true">
+        <param name="file" value="$(find sawyer_moveit_config)/config/r_twist_slider.yaml"/>
+    </node>
+
+</launch>

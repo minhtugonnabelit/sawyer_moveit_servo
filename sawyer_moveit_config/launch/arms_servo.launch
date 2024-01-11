@@ -1,0 +1,8 @@
+<launch>
+  <arg name="config" default="$(find sawyer_moveit_config)/config/servo_config.yaml"/>
+
+  <node name="r_arm_servo_server" pkg="moveit_servo" type="servo_server" output="screen" >
+    <rosparam command="load" file="$(arg config)"/>
+
+
+</launch>
